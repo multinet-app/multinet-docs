@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+sphinx = "==2.4.4"
+recommonmark = "==0.6.0"
+
+[requires]
+python_version = "3.7"
+
+[scripts]
+build = "make html"
+serve = "python -m http.server ${DOC_SERVE_PORT} --bind 127.0.0.1 -d _build/html"
