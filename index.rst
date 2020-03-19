@@ -9,6 +9,7 @@ Welcome to Multinet
 .. toctree::
    :maxdepth: 2
 
+   overview
    multinet
 
 Indices and tables
