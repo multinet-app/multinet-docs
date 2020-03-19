@@ -10,6 +10,7 @@ Welcome to Multinet
    :maxdepth: 2
 
    overview
+   quickstart
    multinet
 
 Indices and tables
