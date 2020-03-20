@@ -59,8 +59,8 @@ tables as being of different node types, so download :download:`clubs.csv
 as above.
 
 You should now see both a ``members`` and a ``clubs`` table listed. You can
-click on each of these to see the rows of each table. Use the browser's back
-button to return to the workspace view.
+click on each of these to see the rows of each table. Return to the workspace
+view by clicking on boston in the top bar.
 
 **3. Upload an Edge Table**
 
