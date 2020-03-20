@@ -31,7 +31,7 @@ In general, networks are modeled as a collection of *nodes*, representing
 entities such as people or computers, connected together via *links*
 representing some type of relationship between a subset of pairs of nodes.
 *Multivariate* networks are networks that carry extra data (also known as
-*attributes* on the nodes and edges. For instance, in a social network, the
+*attributes*) on the nodes and edges. For instance, in a social network, the
 nodes (representing individual people) might each carry data such as *name*,
 *age*, *hometown*, etc. A network representing the retina could have scientific
 measurements or assessments, such as cell types for the nodes, or voltage
