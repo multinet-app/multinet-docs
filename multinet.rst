@@ -74,11 +74,11 @@ of the row with a slash. For instance, the John Adams row has a key value of
 
 You can think of the rows of such a table as a directed links connecting two of
 the nodes from somewhere in the workspace. To see this in action, download
-:download:`/files/membership.csv`, and upload it as a table. Because this table
-has properly formatted ``_from`` and ``_to`` attributes, Multinet recognizes it
-as an *edge table*. If you click on the newly uploaded table, you can explore
-what the rows look like. Note that while edge tables can also have other
-attributes, this one does not.
+:download:`membership.csv </files/membership.csv>`, and upload it as a table.
+Because this table has properly formatted ``_from`` and ``_to`` attributes,
+Multinet recognizes it as an *edge table*. If you click on the newly uploaded
+table, you can explore what the rows look like. Note that while edge tables can
+also have other attributes, this one does not.
 
 **4. Create a Network**
 
