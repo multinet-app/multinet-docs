@@ -37,8 +37,7 @@ Build and Run ``multinet-server``
 Launch ArangoDB
 ---------------
 
-1. Move into the server repository's ``devops`` directory: ``cd
-   multinet-server/devops``.
+1. Move into the server repository: ``cd multinet-server``.
 2. Run the docker container for ArangoDB: ``docker-compose up``.
 
 Build and Run ``multinet-client``
