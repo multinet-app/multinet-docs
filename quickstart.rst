@@ -15,6 +15,7 @@ Install Dependencies
 
 These projects are built using the following tools; ensure that you have them
 installed:
+
 - Docker
 - Python 3.7
 - Pipenv
