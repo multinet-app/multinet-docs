@@ -13,6 +13,8 @@ these steps:
 
 1. Be sure that Pipenv is installed on your system.
 2. Check out this repository, then move into it (e.g., `cd multinet-docs`).
-3. Install the project dependencies: `pipenv install`.
-4. Build and serve the documentation: `pipenv run autobuild`.
-5. Point your web browser to http://localhost:8000 to see the documentation.
+3. Make a live copy of the environment file: `cp .env.default .env` (or, if you
+   prefer, use a symlink: `ln -s .env.default .env`).
+4. Install the project dependencies: `pipenv install`.
+5. Build and serve the documentation: `pipenv run autobuild`.
+6. Point your web browser to http://localhost:8000 to see the documentation.
