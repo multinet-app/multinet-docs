@@ -38,7 +38,9 @@ Launch ArangoDB
 ---------------
 
 1. Move into the server repository: ``cd multinet-server``.
-2. Run the docker container for ArangoDB: ``docker-compose up``.
+2. Run the docker container for ArangoDB: ``docker-compose up``. (On Macs, you
+   may need to use an alternate command: ``ARANGO_DATA=~/.local/multinet/arango
+   docker-compose up``.)
 
 Build and Run ``multinet-client``
 ---------------------------------
