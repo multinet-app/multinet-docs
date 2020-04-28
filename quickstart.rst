@@ -16,11 +16,25 @@ Install Dependencies
 These projects are built using the following tools; ensure that you have them
 installed:
 
-- Docker
-- Python 3.7
+- Docker and Docker Compose
+  (`Windows <https://docs.docker.com/docker-for-windows/install/>`_,
+  `MacOS <https://docs.docker.com/docker-for-mac/install/>`_,
+  `Linux Docker Engine <https://docs.docker.com/engine/install/>`_,
+  `Linux Docker Compose <https://docs.docker.com/compose/install/#install-compose>`_)
+- Python 3.7 and Pip
+  (`Windows <https://docs.python-guide.org/starting/install3/win/#install3-windows>`_,
+  `MacOS <https://docs.python-guide.org/starting/install3/osx/#install3-osx>`_,
+  `Ubuntu <https://docs.python-guide.org/starting/install3/linux/#install3-linux>`_)
 - Pipenv
+  (`Windows <https://pipenv.pypa.io/en/latest/install/#pragmatic-installation-of-pipenv>`_,
+  `MacOS <https://pipenv.pypa.io/en/latest/install/#homebrew-installation-of-pipenv>`_,
+  `Linux <https://pipenv.pypa.io/en/latest/install/#pragmatic-installation-of-pipenv>`_)
 - Node
+  (`All OSes <https://docs.npmjs.com/downloading-and-installing-node-js-and-npm>`_)
 - Yarn
+  (`Windows <https://classic.yarnpkg.com/en/docs/install/#windows-stable>`_,
+  `MacOS <https://classic.yarnpkg.com/en/docs/install/#mac-stable>`_,
+  `Linux <https://classic.yarnpkg.com/en/docs/install/>`_)
 
 Build and Run ``multinet-server``
 ---------------------------------
@@ -40,7 +54,8 @@ Launch ArangoDB
 1. Move into the server repository: ``cd multinet-server``.
 2. Run the docker container for ArangoDB: ``docker-compose up``. (On Macs, you
    may need to use an alternate command: ``ARANGO_DATA=~/.local/multinet/arango
-   docker-compose up``.)
+   docker-compose up``.) If you're getting an error that looks like ``docker-compose: 
+   command not found``, make sure that the docker application is running.
 
 Build and Run ``multinet-client``
 ---------------------------------
