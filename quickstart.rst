@@ -6,9 +6,9 @@ Quick Start
 The easiest way to get started with Multinet is to go to https://multinet.app,
 and begin experimenting.
 
-To build a local development environment, you will need to *launch a database*,
-*install dependencies*, *build and run the server*, and *build and run the
-client*.  Follow these steps:
+To build a local development environment, you will need to *install
+dependencies*, *launch a database*, *build and run the server*, and *build and
+run the client*.  Follow these steps:
 
 Install Dependencies
 --------------------
