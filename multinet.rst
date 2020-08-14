@@ -25,6 +25,12 @@ In this tutorial sequence we will be recreating the `Paul Revere dataset
 as a social network connecting the various Revolutionary War figures to the
 social clubs they belonged to.
 
+The first step for any session where you're modifying data, is to log in using
+Google OAuth. Click the person icon next to the multinet logo and then click 
+'Sign in with Google'. Follow the prompts until you're back on the multinet site.
+Authenticating allows you to upload data into certain workspaces (this is based 
+on your permissions level).
+
 To create a workspace to hold the materials for this dataset, use the ``NEW
 WORKSPACE`` button appearing near the top of the left sidebar. A dialog box will
 appear asking for the name of the new workspace. Fill this in with ``boston``
