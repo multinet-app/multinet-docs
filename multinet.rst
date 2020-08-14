@@ -46,8 +46,8 @@ live in this workspace.
 Multinet largely thinks of attribute data in tabular terms. That is, Multinet
 can ingest data formatted as (among other things) CSV files, storing it as a
 *table* of *rows*, each row containing the same types of attributes in the same
-order. Every node table must have a column of keys, which contains a value unique
-to that row within the table it is part of. By default, the Multinet uploader
+order. Every node table must have a column of keys, which contains a unique value
+for every row within the table it is part of. By default, the Multinet uploader
 assumes that this is in a column called ``_key``, but you may specify a different
 column in the uploader options.
 
