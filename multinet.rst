@@ -44,10 +44,10 @@ live in this workspace.
 **2. Upload Node Tables**
 
 Multinet largely thinks of attribute data in tabular terms. That is, Multinet
-can ingest data formatted as (among other thigns) CSV files, storing it as a
+can ingest data formatted as (among other things) CSV files, storing it as a
 *table* of *rows*, each row containing the same types of attributes in the same
-order. Every node table must have a column of keys, which contains a unique value
-for every row within the table it is part of. By default, the Multinet uploader
+order. Every node table must have a column of keys, which contains a value unique
+to that row within the table it is part of. By default, the Multinet uploader
 assumes that this is in a column called ``_key``, but you may specify a different
 column in the uploader options.
 
@@ -104,7 +104,7 @@ the Networks column.
 If you click on the new network, you will be taken to the network view, which
 aggregates various pieces of information about this network, and provides links
 to visualization applications. Note that the main panel displays some
-characeristic information such as the number of nodes and edges, and the drawer
+characteristic information such as the number of nodes and edges, and the drawer
 at the bottom displays information about the node types comprising this network,
 the edge table that provides the connectivity, and a paged view of the nodes
 themselves, identified by their node IDs. Clicking on these items will bring you

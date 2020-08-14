@@ -20,7 +20,7 @@ http://www.sphinx-doc.org/en/master/config
 # -- Project information -----------------------------------------------------
 
 project = "Multinet"
-copyright = "2019, Multinet Team"
+copyright = "2019-2020, Multinet Team"
 author = "Multinet Team"
 
 # The full version, including alpha/beta/rc tags
