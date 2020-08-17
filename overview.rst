@@ -6,7 +6,7 @@ Welcome to Multinet!
 Multinet is a software suite consisting of a web API server, a web client
 application, a TypeScript client library, and a collection of analysis and
 visualization applications that are all designed to work with each other to host
-*multivariate network data* and enable *disovery, analysis, and visualization*
+*multivariate network data* and enable *discovery, analysis, and visualization*
 for them.
 
 Multinet is part of a larger `NSF research project
@@ -56,7 +56,7 @@ The Multinet stack consists of the following components:
   open-source Flask API server that provides the Multinet API, which we are
   developing as part of this project
 
-- `mutlinet-client <https://github.com/multinet-app/multinet-client>`_, an
+- `multinet-client <https://github.com/multinet-app/multinet-client>`_, an
   open-source web application, using VueJS and Vuetify to present an easy to use
   interface to the Multinet API, including access to stored data, and ways to
   launch intensive visualization and analysis applications

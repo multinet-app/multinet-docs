@@ -25,6 +25,11 @@ In this tutorial sequence we will be recreating the `Paul Revere dataset
 as a social network connecting the various Revolutionary War figures to the
 social clubs they belonged to.
 
+The first step for any session where you're modifying data, is to log in using
+Google OAuth. Click the person icon next to the multinet logo and then click 
+'Sign in with Google'. Follow the prompts until you're back on the multinet site.
+Authenticating allows you to create workspaces and upload data to them.
+
 To create a workspace to hold the materials for this dataset, use the ``NEW
 WORKSPACE`` button appearing near the top of the left sidebar. A dialog box will
 appear asking for the name of the new workspace. Fill this in with ``boston``
@@ -38,10 +43,12 @@ live in this workspace.
 **2. Upload Node Tables**
 
 Multinet largely thinks of attribute data in tabular terms. That is, Multinet
-can ingest data formatted as (among other thigns) CSV files, storing it as a
+can ingest data formatted as (among other things) CSV files, storing it as a
 *table* of *rows*, each row containing the same types of attributes in the same
-order. Every node table must have a special attribute called ``_key``, which
-contains a value unique to that row within the table it is part of.
+order. Every node table must have a column of keys, which contains a unique value
+for every row within the table it is part of. By default, the Multinet uploader
+assumes that this is in a column called ``_key``, but you may specify a different
+column in the uploader options.
 
 We will begin by uploading separate tables to account for the *people* and
 *clubs* represented in this dataset. First, download :download:`members.csv
@@ -96,7 +103,7 @@ the Networks column.
 If you click on the new network, you will be taken to the network view, which
 aggregates various pieces of information about this network, and provides links
 to visualization applications. Note that the main panel displays some
-characeristic information such as the number of nodes and edges, and the drawer
+characteristic information such as the number of nodes and edges, and the drawer
 at the bottom displays information about the node types comprising this network,
 the edge table that provides the connectivity, and a paged view of the nodes
 themselves, identified by their node IDs. Clicking on these items will bring you
