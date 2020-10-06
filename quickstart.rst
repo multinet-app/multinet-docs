@@ -52,9 +52,10 @@ Build and Run ``multinet-server``
 1. Move into the repository: ``cd multinet-server``.
 2. Copy the ``.env.default`` file: ``cp .env.default .env`` (or symlink it: ``ln
    -s .env.default .env``).
-3. Install the Python dependencies: ``pipenv install``.
-4. Run the server application in dev mode: ``pipenv run serve``.
-5. Point your web browser to http://localhost:5000 to ensure that the server is
+3. Create :ref:`OAuth2 Credentials` and make sure to copy them to your .env file.
+4. Install the Python dependencies: ``pipenv install``.
+5. Run the server application in dev mode: ``pipenv run serve``.
+6. Point your web browser to http://localhost:5000 to ensure that the server is
    working.
 
 Build and Run ``multinet-client``

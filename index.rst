@@ -12,6 +12,7 @@ Welcome to Multinet
    overview
    quickstart
    multinet
+   oauth2
 
 Indices and tables
 ==================
