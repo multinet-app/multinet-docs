@@ -9,7 +9,10 @@ client.
 Google OAuth2 Steps
 -------------------------------
 
-To enable OAuth2 on your own project, you'll have to:
+If you're a developer on the main Multinet project (i.e. the one hosted on
+multinet.app), you can request our production credentials from an administrator.
+
+Otherwise, to enable OAuth2 on your own project, you'll have to:
 
 1. Either have or `create <https://console.developers.google.com/projectcreate>`_ 
    a Google Cloud project.
