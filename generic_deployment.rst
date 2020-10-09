@@ -86,7 +86,58 @@ together, you can't use the DNS method from above. Instead, you'll have to run
 a reverse proxy using a program such as `nginx <https://www.nginx.com/>`_,
 or `apache webserver <https://httpd.apache.org/>`_.
 
-Here's an example of an nginx.conf file that you might use::
+Here's an example of an nginx.conf file that you might use. Note the different
+server_name in each server block::
 
-   TODO: config goes here
+   user  nginx;
+   worker_processes 1;
+   error_log  /var/log/nginx/error.log warn;
+   pid        /var/run/nginx.pid;
+   events {
+      worker_connections 1024;
+   }
+   http {
+      include       /etc/nginx/mime.types;
+      default_type  application/octet-stream;
+
+      root /home/ubuntu/multinet-client/dist;
+      index index.html;
+
+      server {
+         listen 80 default_server;
+         server_name _;
+         return 301 https://$server_name$request_uri;
+      }
+
+      server {
+         listen 443 ssl;
+         server_name api.domain.com;
+         ssl_protocols       TLSv1 TLSv1.1 TLSv1.2;
+         ssl_ciphers         HIGH:!aNULL:!MD5;
+
+         ssl_certificate     /etc/letsencrypt/live/.../fullchain.pem;
+         ssl_certificate_key /etc/letsencrypt/live/.../key.key;
+
+         location / {
+               include uwsgi_params;
+               uwsgi_pass unix:///home/ubuntu/multinet-server/socket.sock;
+               uwsgi_read_timeout 7200s;
+               uwsgi_send_timeout 7200s;
+         }
+      }
+
+      server {
+         listen 443 ssl;
+         server_name www.domain.com domain.com;
+         ssl_protocols       TLSv1 TLSv1.1 TLSv1.2;
+         ssl_ciphers         HIGH:!aNULL:!MD5;
+
+         ssl_certificate     /etc/letsencrypt/live/.../fullchain.pem;
+         ssl_certificate_key /etc/letsencrypt/live/.../key.key;
+
+         location / {
+            try_files $uri $uri/ =404;
+        }
+      }
+   }
 
