@@ -19,9 +19,9 @@ satisfies your security concerns.
 
 Once you've set up your root user, connect to the ArangoDB instance using the
 default port (or the port you set), and create a user called ``readonly``. This
-user should also have a strong password, but the risk here is slightly lower.
-Once you've set this user up, you should go to their permissions and set
-read-write access to all databases by clicking access for the database ``*``.
+user should also have a strong password. Once you've set this user up, you should
+go to their permissions and set read-write access to all databases by clicking
+access for the database ``*``.
 
 There may also be some additional configuration that you'll need to in order
 for the ``multinet-server`` instance to communicate with the database. This
@@ -140,4 +140,3 @@ server_name in each server block::
         }
       }
    }
-
