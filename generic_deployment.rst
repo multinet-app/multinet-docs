@@ -57,7 +57,7 @@ Make sure you have python3.7 and `pipenv <https://pipenv-fork.readthedocs.io/en/
 1. Clone the repository: ``git clone https://github.com/multinet-app/multinet-client``.
 2. Move into the repository: ``cd multinet-client``.
 3. Install the project dependencies: ``yarn install``.
-4. Copy .env.default to .env and configure the ``VUE_APP_MULTINET_HOST``.
+4. Copy .env.default to .env and configure ``VUE_APP_MULTINET_HOST`` to point to the address the server is running on (e.g. http://127.0.0.1:8000).
 5. Build the production app: ``yarn build``.
 
 At this point, you have a few options for how to proceed. The most recommended
