@@ -67,13 +67,14 @@ See the docs for these projects for details on how to do that.
 Handling DNS
 ------------
 
-Since all of these services should be deployed onto separate servers/vms the
-easiest way to handle accessing them is through DNS. If you have a domain, you
-can set subdomains for each program in the stack. For example:
+All of these services can be deployed onto separate servers/vms. If this is how
+you want to deploy them, and you have a domain, you can assign a subdomain (through
+your DNS provider) for each program in the stack. For a given example domain
+``domain.com``, you could organize the services as follows:
 
-* db for the ArangoDB instance
-* api for the ``multinet-server`` application
-* @ and www for the ``multinet-client`` application
+* domain.com and www.domain.com for the ``multinet-client`` application
+* db.domain.com for the ArangoDB instance
+* api.domain.com for the ``multinet-server`` application
 
 There may be some additional apps that you can host on the same domain. For
 example, we host MultiLink and MultiMatrix on subdomains of our main domain.
