@@ -39,7 +39,7 @@ Make sure you have python3.7 and `pipenv <https://pipenv-fork.readthedocs.io/en/
    -s .env.default .env``).
 4. Create :ref:`OAuth2 Credentials` and make sure to copy them to your .env file.
 5. Set ALLOWED_ORIGINS to the address for your ``multinet-client`` instance,
-   including the method (e.g. https://multinet.app, yours will be different)
+   including the protocol (e.g. https://multinet.app, yours will be different)
 6. Set your ARANGO_PASSWORD to the ``root`` password for ArangoDB, and your 
    ARANGO_READONLY_PASSWORD to the password you created for the ``readonly`` user.
 7. Install the Python dependencies: ``pipenv install``.
