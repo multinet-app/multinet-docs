@@ -31,7 +31,7 @@ on a case-by-case basis.
 ``multinet-server``
 -------------------
 
-Make sure you have python3.7 and pipenv installed. Then:
+Make sure you have python3.7 and `pipenv <https://pipenv-fork.readthedocs.io/en/latest/install.html#installing-pipenv/>`_ installed. Then:
 
 1. Clone the repository: ``git clone https://github.com/multinet-app/multinet-server``.
 2. Move into the repository: ``cd multinet-server``.
