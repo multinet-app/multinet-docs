@@ -26,4 +26,4 @@ Otherwise, to enable OAuth2 on your own project, you'll have to:
    and select "Create Credentials" > "OAuth2 client ID". 
 5. Set Application type to "Web application" and set a redirect URI. By default,
    multinet uses <baseurl>/api/user/oauth/google/authorized
-6. Copy the resulting client ID and secret key into your .env file.
+6. Copy the resulting client ID and secret key into your `multinet-server` .env file as `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET`.
