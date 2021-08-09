@@ -64,8 +64,9 @@ Build and Run ``multinet-client``
 1. Clone the repository: ``git clone https://github.com/multinet-app/multinet-client``.
 2. Move into the repository: ``cd multinet-client``.
 3. Install the project dependencies: ``yarn install``.
-4. Serve the application in dev mode: ``yarn serve``.
-5. Point your web browser to http://localhost:8080 to see the client running.
+4. Set up the appregistry: ``yarn init-appregistry``.
+5. Serve the application in dev mode: ``yarn serve``.
+6. Point your web browser to http://localhost:8080 to see the client running.
 
 At this point, you should have a working development build of Multinet. See the
 rest of this documentation for details on how Multinet works, and how to develop

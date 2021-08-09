@@ -23,7 +23,7 @@ Otherwise, to enable OAuth2 on your own project, you'll have to:
    and 'openid' scopes to run correctly. **NOTE:** Adding a logo means your
    app will have to go through verification, which can take 6 weeks.
 4. Now go to the `"credential" section <https://console.developers.google.com/apis/credentials>`_,
-   and select "Create Credentials" > "OAuth2 client ID". 
+   and select "Create Credentials" > "OAuth client ID". 
 5. Set Application type to "Web application" and set a redirect URI. By default,
-   multinet uses <baseurl>/api/user/oauth/google/authorized
+   multinet uses <baseurl>/api/user/oauth/google/authorized (note that <baseurl> is usually http://localhost:5000)
 6. Copy the resulting client ID and secret key into your `multinet-server` .env file as `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET`.
