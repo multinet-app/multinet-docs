@@ -45,6 +45,20 @@ Launch ArangoDB
    may need to use an alternate command: ``ARANGO_DATA=~/.local/multinet/arango
    docker-compose up``.) If you're getting an error that looks like ``docker-compose: 
    command not found``, make sure that the docker application is running.
+4. When the container is running, you'll need to make a new user on ArangoDB. To do so,
+   navigate to http://localhost:8529 and log in with the default username and password,
+   "root" and "letmein", respectively.
+5. Now that you're logged in, navigate to the "_system" database and then to "users" on
+   the left panel in the dashboard.
+6. Click "Add User" setting username to "readonly" and password to "letmein". Click
+   create to make the user.
+7. Now click on the user readonly to set its permissions. After clicking readonly, click
+   "permissions". On the permissions page, on the line that starts with "*", click the radio
+   button that corresponds to access. At this point click on "dashboard" to complete the
+   setup.
+
+**NOTE**: if you're deploying in production, make sure you update the user passwords in
+ArangoDB and in the .env in multinet-server
 
 Build and Run ``multinet-server``
 ---------------------------------
