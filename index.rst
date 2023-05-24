@@ -13,8 +13,6 @@ Welcome to Multinet
    quickstart
    multinet
    oauth2
-   generic_deployment
-   ssl
 
 Indices and tables
 ==================

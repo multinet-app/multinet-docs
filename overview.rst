@@ -52,8 +52,8 @@ The Multinet Software Stack
 
 The Multinet stack consists of the following components:
 
-- `multinet-server <https://github.com/multinet-app/multinet-server>`_, an
-  open-source Flask API server that provides the Multinet API, which we are
+- `multinet-api <https://github.com/multinet-app/multinet-api>`_, an
+  open-source Django REST API server that provides the Multinet API, which we are
   developing as part of this project
 
 - `multinet-client <https://github.com/multinet-app/multinet-client>`_, an
@@ -61,11 +61,12 @@ The Multinet stack consists of the following components:
   interface to the Multinet API, including access to stored data, and ways to
   launch intensive visualization and analysis applications
 
-- visualization applications, including `view-nodelink
-  <https://github.com/multinet-app/view-nodelink>`_, an interactive node-link diagram that
-  also displays node attributes in various forms, and `view-adjmatrix
-  <https://github.com/multinet-app/view-adjmatrix>`_, an interactive adjacency
-  matrix that also supports attribute display
+- visualization applications, including:
+    - `MultiLink <https://github.com/multinet-app/multilink>`_, an interactive node-link diagram that also displays node attributes in various forms
+
+    - `MultiMatrix <https://github.com/multinet-app/multimatrix>`_, an interactive adjacency matrix that also supports attribute display
+
+    - `UpSet <https://github.com/visdesignlab/upset2>`_, a set visualization tool
 
 - `ArangoDB <https://www.arangodb.com/>`_, a third-party open-source graph
   database system that Multinet uses to store data and perform queries
