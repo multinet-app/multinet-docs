@@ -13,6 +13,7 @@ Welcome to Multinet
    quickstart
    multinet
    oauth2
+   file_formats
 
 Indices and tables
 ==================
