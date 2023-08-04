@@ -1,8 +1,3 @@
-.. Multinet documentation master file, created by
-   sphinx-quickstart on Fri Jun  7 09:36:30 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Welcome to Multinet
 ====================================
 
@@ -10,9 +5,9 @@ Welcome to Multinet
    :maxdepth: 2
 
    overview
-   quickstart
-   multinet
-   oauth2
+   developer_quick_start
+   user_documentation
+   quick_start
    file_formats
 
 Indices and tables

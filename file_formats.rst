@@ -16,7 +16,7 @@ For a CSV node file, there are no required fields, but there are some fields tha
 
 For example, a CSV file with the following structure would be valid:
 
-.. code-block:: csv
+.. code-block::
 
   _key,developer,language
   1,Jack,JavaScript
@@ -61,7 +61,7 @@ For a CSV edge file, there are two required fields: `_from` and `_to`. These fie
 
 For example, a CSV file with the following structure would be valid:
 
-.. code-block:: csv
+.. code-block::
 
   _from,_to,edge_weight
   node_table_name/1,node_table_name/2,10
@@ -101,7 +101,7 @@ We support JSON file format for networks. Uploading networks files requires that
 
 **JSON**
 
-For a JSON network file, there are two required fields: `nodes` and `edges`. These fields are used to reference the nodes and edges that are connected by the network. Nodes must have either an `_id` or `_key` field. Edges must have `_from` and `_to` or `source` and `target` fields.
+For a JSON network file, there are two required fields: `nodes` and `edges`. These fields are used to reference the nodes and edges that are connected by the network. Nodes must have either an `id` or `_key` field. Edges must have `_from` and `_to` or `source` and `target` fields.
 
 For example, a JSON file with the following structure would be valid:
 
@@ -139,6 +139,47 @@ For example, a JSON file with the following structure would be valid:
       {
         "_from": "node_table_name/3",
         "_to": "node_table_name/1",
+        "edge_weight": 30
+      }
+    ]
+  }
+
+As another example, a JSON file with the following structure would also be valid:
+
+.. code-block:: json
+
+  {
+    "nodes": [
+      {
+        "id": "1",
+        "developer": "Jack",
+        "language": "JavaScript"
+      },
+      {
+        "id": "2",
+        "developer": "Roni",
+        "language": "Python"
+      },
+      {
+        "id": "3",
+        "developer": "Jake",
+        "language": "TypeScript"
+      }
+    ],
+    "edges": [
+      {
+        "source": "1",
+        "target": "2",
+        "edge_weight": 10
+      },
+      {
+        "source": "2",
+        "target": "3",
+        "edge_weight": 20
+      },
+      {
+        "source": "3",
+        "target": "1",
         "edge_weight": 30
       }
     ]

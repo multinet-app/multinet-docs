@@ -73,4 +73,4 @@ The Multinet stack consists of the following components:
 
 You can see how the client works by going to https://multinet.app and giving it
 a try. To build your own development environment, either to host your own data
-locally, or to work on the codebases, see :ref:`quickstart`.
+locally, or to work on the codebases, see :ref:`developer_quick_start`.

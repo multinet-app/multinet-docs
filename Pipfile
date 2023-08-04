@@ -16,4 +16,4 @@ python_version = "3.7"
 [scripts]
 build = "sphinx-build . _build"
 serve = "python -m http.server ${DOC_SERVE_PORT} --bind 127.0.0.1 -d _build"
-autobuild = "sphinx-autobuild . _build"
+autobuild = "sphinx-autobuild . _build --port ${DOC_SERVE_PORT}"
