@@ -7,8 +7,8 @@ Welcome to Multinet
    overview
    developer_quick_start
    user_documentation
-   quick_start
    file_formats
+   quick_start
 
 Indices and tables
 ==================
